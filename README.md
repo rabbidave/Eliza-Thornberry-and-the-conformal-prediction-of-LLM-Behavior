@@ -1,6 +1,7 @@
 # Eliza Thornberry and the conformal prediction of LLM Behavior
 Python code for use in predicting a range of LLM outputs by dimension (e.g. sentiment, topic) across fixed domain values (e.g. positive, neutral, negative) or other attributes (e.g. account details, feedback, help needed), and thus monitoring the anticipated possible drift based on the most recent outputs, as a measure of LLM Drift Detection
 
+[Colab Notebook Here](https://colab.research.google.com/github/rabbidave/Eliza-Thornberry-and-the-conformal-prediction-of-LLM-Behavior/blob/main/Eliza.ipynb)
 
 ## ♫ The Dream of the 90's ♫ is alive in ~~Portland~~ ["a weird suite of Enterprise LLM tools"](https://github.com/users/rabbidave/projects/1) named after [Nicktoons](https://en.wikipedia.org/wiki/Nicktoons)
 ### by [some dude in his 30s](https://www.linkedin.com/in/davidisaacpierce)

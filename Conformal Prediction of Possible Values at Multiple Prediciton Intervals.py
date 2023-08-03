@@ -49,7 +49,7 @@ def process_data(X_train, y_train, X_calibrate, y_calibrate, X_test):
 
 # Generate synthetic data for demonstration purposes
 np.random.seed(42)
-X, y = make_regression(n_samples=100, n_features=20, noise=0.1)
+X, y = make_regression(n_samples=1000, n_features=20, noise=0.1)  # Increased number of samples
 
 # Split the data into training, calibration, and test sets
 X_train, X_calibrate, X_test = np.split(X, [int(.7*len(X)), int(.85*len(X))])
@@ -84,10 +84,10 @@ df2_pivot = df2.pivot_table(index='Sentiment', columns='Topic', values='Non-Conf
 # Create heatmaps
 fig, axs = plt.subplots(2, 1, figsize=(10, 10))
 
-sns.heatmap(df1_pivot, ax=axs[0], cmap='coolwarm')
+sns.heatmap(df1_pivot, ax=axs[0], cmap='coolwarm', annot=True, fmt='.2f')
 axs[0].set_title('Non-Conformity Heatmap for Prediction Interval 1')
 
-sns.heatmap(df2_pivot, ax=axs[1], cmap='coolwarm')
+sns.heatmap(df2_pivot, ax=axs[1], cmap='coolwarm', annot=True, fmt='.2f')
 axs[1].set_title('Non-Conformity Heatmap for Prediction Interval 2')
 
 plt.tight_layout()
