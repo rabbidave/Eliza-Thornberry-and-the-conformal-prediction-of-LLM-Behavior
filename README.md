@@ -20,7 +20,7 @@ i.e. affect batch or event-driven prediction of the range of possible values; co
 1) User experience, instrumentation, and metadata capture are crucial to the adoption of LLMs for orchestration of [multi-modal agentic systems](https://en.wikipedia.org/wiki/Multi-agent_system); predicting the range of possible values at set prediction intervals allows for early warning of LLM Drift
 ## Intent:
 
-The intent of this Squidward_looking_out_his_window.py is to efficiently spin up, calculate needed values for evaluation, and inspect each message for non-conformity to established output; thereafter routing messages to the appropriate SQS bus (e.g. for response to user, further evaluation, logging, etc)
+The intent of "Eliza Thornberry and the conformal prediction of LLM Behavior" is to efficiently calculate needed values for evaluation of LLM Drift.
 
 The goal being to detect if the model is likely to experience drift at those set prediction intervals
     
